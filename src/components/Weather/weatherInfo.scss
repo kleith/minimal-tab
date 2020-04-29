@@ -1,0 +1,72 @@
+$white: rgba(255, 255, 255, 0.5);
+
+.WeatherInfo {
+  &-main {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
+
+    &--header {
+      font-size: 21px;
+      span {
+        margin-left: 10px;
+        font-size: 18px;
+        color: $white;
+      }
+    }
+    &--desc {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+      font-size: 16px;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &--temp {
+      align-items: center;
+      display: flex;
+      font-size: 50px;
+      margin-top: 10px;
+      &-min {
+        align-self: flex-end;
+        color: $white;
+        font-size: 40px;
+      }
+    }
+  }
+
+  &-daily {
+    display: flex;
+    flex-direction: row;
+  }
+  &-day {
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 0 3px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &.active {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 3px;
+    }
+  }
+
+  &-date {
+    text-align: center;
+  }
+  &-temp {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    &--min {
+      margin: 0 4px;
+      color: $white;
+    }
+  }
+}

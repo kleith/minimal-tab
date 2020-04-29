@@ -1,0 +1,19 @@
+$weathers: "01", "02", "03", "04", "09", "10", "11", "13", "50";
+$iconSize: 40px;
+
+.WeatherIcon {
+  background-size: $iconSize;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: $iconSize;
+  width: $iconSize;
+
+  @each $icon in $weathers {
+    &.icon-#{$icon}d {
+      background-image: url(./../../assets/weather/#{$icon}d.png);
+    }
+    &.icon-#{$icon}n {
+      background-image: url(./../../assets/weather/#{$icon}n.png);
+    }
+  }
+}

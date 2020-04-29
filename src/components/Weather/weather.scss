@@ -1,0 +1,25 @@
+.Weather {
+  display: inline-block;
+  cursor: pointer;
+
+  &-temp {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: flex-end;
+    span {
+      font-size: 0;
+    }
+  }
+
+  &-placename {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &-tooltip {
+    &::before, &::after {
+      left: 90% !important;
+    }
+  }
+}

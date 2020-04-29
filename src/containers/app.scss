@@ -1,0 +1,52 @@
+.App {
+  // background: url(http://cdn.leoh.io/images/base_zero/image_2.jpg) no-repeat;
+  color: #fff;
+  height: 100vh;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+
+  &-date {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  &-weather {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  &-clock {
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+  }
+
+  &-feed {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(0,0,0, 0.6);
+  }
+}
+
+::-webkit-scrollbar-track {
+  // border: 1px solid #000;
+  background-color: transparent;
+}
