@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 import WeatherIcon from "./WeatherIcon";
-import { unix } from "./../../utils/dates";
+import { unix } from "utils/dates";
 import "./weatherInfo.scss";
 
 class WeatherInfo extends PureComponent {

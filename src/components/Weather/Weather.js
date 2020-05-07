@@ -1,10 +1,10 @@
 import React, { PureComponent } from "react";
 import Tooltip from "react-tooltip";
 
-import WeatherAPI from "../../services/Weather";
+import WeatherAPI from "services/Weather";
 import WeatherIcon from "./WeatherIcon";
 import WeatherInfo from "./WeatherInfo";
-import { WEATHER_MINUTES_EXPIRED } from "../../constants";
+import { WEATHER_MINUTES_EXPIRED } from "constant";
 import "./weather.scss";
 
 class Weather extends PureComponent {

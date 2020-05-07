@@ -1,7 +1,7 @@
-import Api from "./../utils/Api";
-import storage from "./../utils/Storage";
-import { compare } from "./../utils/dates";
-import { WEATHER, WEATHER_MINUTES_EXPIRED, ONECALL, ONECALL_HOURS_EXPIRED } from "./../constants";
+import Api from "utils/Api";
+import storage from "utils/Storage";
+import { compare } from "utils/dates";
+import { WEATHER, WEATHER_MINUTES_EXPIRED, ONECALL, ONECALL_HOURS_EXPIRED } from "constant";
 
 const {
   REACT_APP_WEATHER_KEY: WEATHER_KEY,

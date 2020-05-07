@@ -1,10 +1,10 @@
 import React from "react";
-import Clock from "./../components/Clock";
-import Date from "./../components/Date";
-import Weather from "../components/Weather";
+import Clock from "components/Clock";
+import Date from "components/Date";
+import Weather from "components/Weather";
 
 import "./app.scss";
-import Feed from "../components/Feed/Feed";
+import Feed from "components/Feed/Feed";
 
 function App() {
   return (

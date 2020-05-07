@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { date } from "../../utils/dates";
+import { date } from "utils/dates";
 
 class Date extends PureComponent {
   render() {
